@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>页面标题 | CHO22 植物设计</title>
+    <title>植物图鉴 | CHO22植物设计</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===== 导航栏（复制index.html中的导航栏） ===== -->
+    <!-- 导航栏 -->
     <header>
-       <div class="logo">
-    <span class="logo-icon">🌿</span>
-    <h1>CHO22</h1>
-    <span class="logo-tagline">植物 · 设计 · 生活</span>
-</div>
+        <div class="logo">
+            <span class="logo-icon">🌿</span>
+            <h1>CHO22</h1>
+            <span class="logo-tagline">植物 · 设计 · 生活</span>
+        </div>
         <nav>
             <a href="index.html">首页</a>
             <a href="plants.html" class="active">植物图鉴</a>
@@ -26,17 +26,38 @@
         <button class="menu-toggle" id="menuToggle">☰</button>
     </header>
 
-    <!-- ===== 页面主要内容 ===== -->
+    <!-- 页面主体 -->
     <main>
-        <h1>页面标题</h1>
-        <p>页面内容...</p>
+        <section class="page-header">
+            <h1>🌿 植物图鉴</h1>
+            <p>探索我们精选的植物品种</p>
+        </section>
+
+        <!-- 植物卡片网格 -->
+        <section id="plantSection">
+            <div id="plantList" class="plant-grid">
+                <!-- 植物卡片由 JavaScript 动态生成 -->
+            </div>
+        </section>
+
+        <!-- 添加植物表单 -->
+        <section id="addSection" class="add-section">
+            <h2>➕ 添加新植物</h2>
+            <form id="addForm">
+                <div class="form-group">
+                    <input type="text" id="plantName" placeholder="植物名称" required>
+                    <input type="text" id="plantDesc" placeholder="植物描述（选填）">
+                </div>
+                <button type="submit">添加植物</button>
+            </form>
+        </section>
     </main>
 
-    <!-- ===== 页脚（复制index.html中的页脚） ===== -->
+    <!-- 页脚 -->
     <footer>
         <div class="footer-content">
             <div>
-                <h4>🌿 CHO22 植物设计</h4>
+                <h4>🌿 CHO22植物设计</h4>
                 <p>让植物成为生活的一部分</p>
             </div>
             <div>
@@ -53,7 +74,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 CHO22 植物设计公司. All rights reserved.</p>
+            <p>&copy; 2026 CHO22植物设计公司. All rights reserved.</p>
         </div>
     </footer>
 
