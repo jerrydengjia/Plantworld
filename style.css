@@ -1,367 +1,280 @@
-/* ===== 全局重置 & 基础 ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f7faf7;
-    color: #2d3e2d;
-    line-height: 1.6;
-}
-
-/* ===== 导航栏 ===== */
-header {
-    background: #1a3a1a;
-    color: white;
-    padding: 15px 40px;
+/* ===== Services Detail Page ===== */
+.services-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.service-detail-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid #e8f0e8;
 }
 
-.logo-icon {
-    font-size: 28px;
+.service-icon-large {
+    font-size: 56px;
+    margin-bottom: 10px;
 }
 
-.logo h1 {
-    font-size: 28px;
-    font-weight: 300;
-    letter-spacing: 2px;
-}
-
-.logo h1 .sub {
-    font-size: 16px;
-    font-weight: 700;
-    vertical-align: super;
-}
-
-.logo-tagline {
-    font-size: 12px;
-    opacity: 0.7;
-    margin-left: 10px;
-    letter-spacing: 2px;
-}
-
-nav {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-}
-
-nav a {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s;
-    padding: 5px 0;
-    border-bottom: 2px solid transparent;
-}
-
-nav a:hover,
-nav a.active {
-    color: #a8d5a2;
-    border-bottom-color: #a8d5a2;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: 2px solid white;
-    color: white;
-    font-size: 24px;
-    padding: 5px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* ===== Hero 区域 ===== */
-.hero {
-    background: linear-gradient(135deg, #1a3a1a 0%, #2d5a27 100%);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero h2 {
-    font-size: 48px;
-    font-weight: 300;
-    margin-bottom: 15px;
-    letter-spacing: 4px;
-}
-
-.hero p {
-    font-size: 20px;
-    opacity: 0.85;
-    margin-bottom: 30px;
-}
-
-.btn-primary {
-    display: inline-block;
-    background: #a8d5a2;
+.service-detail-card h2 {
     color: #1a3a1a;
-    padding: 12px 40px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s;
+    margin-bottom: 12px;
 }
 
-.btn-primary:hover {
-    background: #c5e8c0;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+.service-detail-card p {
+    color: #555;
+    line-height: 1.8;
 }
 
-/* ===== 服务预览 ===== */
-.services-preview {
-    padding: 60px 40px;
+/* ===== Merchandise Page ===== */
+.merchandise-grid {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.services-preview h2 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 300;
-    margin-bottom: 40px;
-    color: #1a3a1a;
-}
-
-.service-grid {
+    padding: 40px 20px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
 }
 
-.service-card {
+.merch-card {
     background: white;
-    padding: 35px 30px;
+    padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
     border: 1px solid #e8f0e8;
 }
 
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-}
-
-.service-icon {
+.merch-icon {
     font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.service-card h3 {
-    font-size: 20px;
-    color: #1a3a1a;
     margin-bottom: 10px;
 }
 
-.service-card p {
-    color: #555;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-.service-card a {
-    color: #2d5a27;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.service-card a:hover {
+.merch-card h3 {
     color: #1a3a1a;
+    margin-bottom: 8px;
 }
 
-/* ===== 理念展示区 ===== */
-.featured {
-    background: #e8f0e8;
-    padding: 60px 40px;
+.merch-card p {
+    color: #555;
 }
 
-.featured-content {
+/* ===== About Page ===== */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.about-text h2 {
+    color: #1a3a1a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    padding: 10px 0;
+    color: #3d5a3d;
+    border-bottom: 1px solid #e8f0e8;
+}
+
+/* ===== Contact Page ===== */
+.contact-content {
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
-}
-
-.featured-content h2 {
-    font-size: 36px;
-    font-weight: 300;
-    color: #1a3a1a;
-    margin-bottom: 20px;
-}
-
-.featured-content p {
-    font-size: 18px;
-    color: #3d5a3d;
-    max-width: 700px;
-    margin: 0 auto 40px;
-}
-
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-}
-
-.stats div {
-    text-align: center;
-}
-
-.stats span {
-    font-size: 40px;
-    font-weight: 700;
-    color: #1a3a1a;
-    display: block;
-}
-
-.stats div {
-    font-size: 14px;
-    color: #3d5a3d;
-}
-
-/* ===== 页脚 ===== */
-footer {
-    background: #0f2a0f;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 50px 40px 20px;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 40px 20px 60px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
 }
 
-.footer-content h4 {
-    color: white;
+.contact-info {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid #e8f0e8;
+}
+
+.contact-info p {
+    padding: 8px 0;
+    color: #3d5a3d;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid #e8f0e8;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
     margin-bottom: 12px;
+    border: 1px solid #d0dcd0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2d5a27;
+    box-shadow: 0 0 0 3px rgba(45,90,39,0.1);
+}
+
+.contact-form button {
+    width: 100%;
+    background: #2d5a27;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
     font-size: 16px;
+    cursor: pointer;
 }
 
-.footer-content p {
-    font-size: 14px;
-    opacity: 0.8;
-    line-height: 1.8;
+.contact-form button:hover {
+    background: #1a3a1a;
 }
 
-.footer-content a {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    padding: 3px 0;
-}
-
-.footer-content a:hover {
-    color: #a8d5a2;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 13px;
-    opacity: 0.6;
-}
-
-/* ===== 响应式 ===== */
-
-/* 平板 */
+/* ===== Responsive ===== */
 @media (min-width: 768px) {
-    .service-grid {
+    .merchandise-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .footer-content {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .hero h2 {
-        font-size: 60px;
+    .contact-content {
+        grid-template-columns: 1fr 2fr;
     }
 }
 
-/* 桌面 */
 @media (min-width: 1024px) {
-    .service-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .footer-content {
+    .merchandise-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+/* ===== Login Page ===== */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+    background: #f7faf7;
+}
 
-/* ===== 移动端：汉堡菜单 ===== */
-@media (max-width: 767px) {
-    header {
-        padding: 15px 20px;
-    }
+.login-box {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+    width: 100%;
+    border: 1px solid #e8f0e8;
+}
 
-    nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
+.login-box h1 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #1a3a1a;
+    text-align: center;
+    margin-bottom: 8px;
+}
 
-    nav.open {
-        display: flex;
-    }
+.login-box > p {
+    text-align: center;
+    color: #3d5a3d;
+    margin-bottom: 30px;
+}
 
-    .menu-toggle {
-        display: block;
-    }
+.login-box .form-group {
+    margin-bottom: 18px;
+}
 
-    .logo-tagline {
-        display: none;
-    }
+.login-box label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1a3a1a;
+    margin-bottom: 5px;
+}
 
-    .hero h2 {
-        font-size: 32px;
-    }
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d0dcd0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
 
-    .hero p {
-        font-size: 16px;
-    }
+.login-box input:focus {
+    outline: none;
+    border-color: #2d5a27;
+    box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.1);
+}
 
-    .services-preview {
-        padding: 40px 20px;
-    }
+.btn-login {
+    width: 100%;
+    background: #2d5a27;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 5px;
+}
 
-    .stats {
-        gap: 30px;
-    }
+.btn-login:hover {
+    background: #1a3a1a;
+}
 
-    .stats span {
-        font-size: 30px;
-    }
+.error-message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    min-height: 24px;
+}
+
+.login-hint {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e8f0e8;
+    text-align: center;
+    font-size: 14px;
+    color: #3d5a3d;
+    background: #f7faf7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.login-hint code {
+    background: #e8f0e8;
+    padding: 2px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #1a3a1a;
 }

@@ -1,80 +1,79 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>植物图鉴 | CHO22植物设计</title>
+    <title>Plant Gallery | CHO22</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 导航栏 -->
+    <!-- ===== Navigation ===== -->
     <header>
         <div class="logo">
             <span class="logo-icon">🌿</span>
             <h1>CHO22</h1>
-            <span class="logo-tagline">植物 · 设计 · 生活</span>
+            <span class="logo-tagline">Plants · Design · Life</span>
         </div>
         <nav>
-            <a href="index.html">首页</a>
-            <a href="plants.html" class="active">植物图鉴</a>
-            <a href="services.html">服务</a>
-            <a href="merchandise.html">纪念品</a>
-            <a href="about.html">关于</a>
-            <a href="contact.html">联系我们</a>
+            <a href="index.html">Home</a>
+            <a href="plants.html" class="active">Plants</a>
+            <a href="services.html">Services</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" id="loginLink">🔐 Login</a>
         </nav>
         <button class="menu-toggle" id="menuToggle">☰</button>
     </header>
 
-    <!-- 页面主体 -->
+    <!-- ===== Main Content ===== -->
     <main>
         <section class="page-header">
-            <h1>🌿 植物图鉴</h1>
-            <p>探索我们精选的植物品种</p>
+            <h1>🌿 Plant Gallery</h1>
+            <p>Explore our curated collection of plants</p>
         </section>
 
-        <!-- 植物卡片网格 -->
         <section id="plantSection">
             <div id="plantList" class="plant-grid">
-                <!-- 植物卡片由 JavaScript 动态生成 -->
+                <!-- Plant cards rendered by JavaScript -->
             </div>
         </section>
 
-        <!-- 添加植物表单 -->
         <section id="addSection" class="add-section">
-            <h2>➕ 添加新植物</h2>
+            <h2>➕ Add a New Plant</h2>
             <form id="addForm">
                 <div class="form-group">
-                    <input type="text" id="plantName" placeholder="植物名称" required>
-                    <input type="text" id="plantDesc" placeholder="植物描述（选填）">
+                    <input type="text" id="plantName" placeholder="Plant name" required>
+                    <input type="text" id="plantDesc" placeholder="Description (optional)">
                 </div>
-                <button type="submit">添加植物</button>
+                <button type="submit">Add Plant</button>
             </form>
         </section>
     </main>
 
-    <!-- 页脚 -->
+    <!-- ===== Footer ===== -->
     <footer>
         <div class="footer-content">
             <div>
-                <h4>🌿 CHO22植物设计</h4>
-                <p>让植物成为生活的一部分</p>
+                <h4>🌿 CHO22 Plant Design</h4>
+                <p>Bringing plants into everyday life</p>
             </div>
             <div>
-                <h4>联系方式</h4>
+                <h4>Contact</h4>
                 <p>📧 hello@cho22plants.com</p>
                 <p>📞 (02) 1234 5678</p>
-                <p>📍 悉尼 · 植物园路 88 号</p>
+                <p>📍 88 Botanic Road, Sydney</p>
             </div>
             <div>
-                <h4>快速链接</h4>
-                <a href="plants.html">植物图鉴</a>
-                <a href="services.html">服务</a>
-                <a href="contact.html">联系我们</a>
+                <h4>Quick Links</h4>
+                <a href="plants.html">Plants</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 CHO22植物设计公司. All rights reserved.</p>
+            <p>&copy; 2026 CHO22 Plant Design. All rights reserved.</p>
         </div>
     </footer>
 

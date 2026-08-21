@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CHO22</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Navigation ===== -->
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🌿</span>
+            <h1>CHO22</h1>
+            <span class="logo-tagline">Plants · Design · Life</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="plants.html">Plants</a>
+            <a href="services.html">Services</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </header>
+
+    <!-- ===== Login Form ===== -->
+    <main>
+        <section class="login-section">
+            <div class="login-box">
+                <h1>🔐 Welcome Back</h1>
+                <p>Login to your CHO22 account</p>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginUsername">Username</label>
+                        <input type="text" id="loginUsername" placeholder="Enter your username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+                    <p id="loginError" class="error-message"></p>
+                </form>
+
+                <p class="login-hint">
+                    <strong>Demo Account:</strong><br>
+                    Username: <code>admin</code><br>
+                    Password: <code>123456</code>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>🌿 CHO22 Plant Design</h4>
+                <p>Bringing plants into everyday life</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>📧 hello@cho22plants.com</p>
+                <p>📞 (02) 1234 5678</p>
+                <p>📍 88 Botanic Road, Sydney</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="plants.html">Plants</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CHO22 Plant Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
